@@ -19,3 +19,7 @@ Exim Sử dụng cơ chế ACL cho thông lượng tốt hơn. Danh sách điề
 - Exim không được thiết kế để lưu trữ thư cho các máy chủ quay số *(dial-hosts)*. Khi khối lượng thư lớn như vậy, tốt hơn hết bạn nên đưa các thư được “gửi” vào các tệp (nghĩa là nằm ngoài hàng đợi của Exim) và sau đó được chuyển đến các máy chủ quay số bằng các phương tiện khác.
 - Mặc dù Exim có các phương tiện cơ bản để quét các tin nhắn đến, nhưng chúng không đủ toàn diện để thực hiện quét toàn bộ vi-rút hoặc thư rác. Các hoạt động này được thực hiện tốt nhất bằng cách sử dụng các gói phần mềm chuyên dụng bổ sung. Nếu bạn biên dịch Exim với phần mở rộng quét nội dung, các giao diện đơn giản cho một số trình quét phổ biến sẽ được cung cấp.
 
+## 2. Exim command line
+
+https://www.exim.org/exim-html-4.93/doc/html/spec_html/ch-the_exim_command_line.html
+
