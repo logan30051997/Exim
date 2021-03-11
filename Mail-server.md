@@ -11,15 +11,18 @@ Email client (từ kỹ thuật là Mail User Agent (MUA), là một phần mề
 
 ## 2. Phân loại
 
-- Outgoing Email Server là gì?
+- Outgoing Email Server là gì? 
 Outgoing Mail Server hay Mail Server gửi đi sử dụng giao thức SMTP (Simple Mail Transfer Protocol). Đây là giao thức dịch chuyển mail đơn giản được dùng để liên lạc với server từ xa. Đồng thời cho phép gửi nhiều thư cùng một lúc tới các server khác nhau.
+ort 25/465
 
-- Incoming Email Server là gì?
+- Incoming Email Server là gì? 
 Giao thức này hay còn được biết đến dưới 2 hình thức:
 
-POP3 (Post Office Protocol): chuyển email tới lưu ở máy tính chứa Mail Client, thường là nội bộ máy tính của người dùng thông qua một ứng dụng email như Outlook, Mac Mail, Windows Mail…
+POP3 (Post Office Protocol): chuyển email tới lưu ở máy tính chứa Mail Client, thường là nội bộ máy tính của người dùng thông qua một ứng dụng email như Outlook, Mac Mail, Windows Mail… 
+Port 110/995
 
 IMAP (Internet Message Access Protocol): là phương thức phức tạp hơn cho phép nhiều client cùng lúc kết nối tới một Mailbox. Email từ Mailbox sẽ được sao chép tới máy client và bản gốc của Email vẫn sẽ được lưu trên Mail Server.
+Port 143/993
 
 ## 3. Hoạt động
 
