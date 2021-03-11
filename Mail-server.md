@@ -13,7 +13,7 @@ Email client (từ kỹ thuật là Mail User Agent (MUA), là một phần mề
 
 - Outgoing Email Server là gì? 
 Outgoing Mail Server hay Mail Server gửi đi sử dụng giao thức SMTP (Simple Mail Transfer Protocol). Đây là giao thức dịch chuyển mail đơn giản được dùng để liên lạc với server từ xa. Đồng thời cho phép gửi nhiều thư cùng một lúc tới các server khác nhau.
-ort 25/465
+Port 25/465
 
 - Incoming Email Server là gì? 
 Giao thức này hay còn được biết đến dưới 2 hình thức:
