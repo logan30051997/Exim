@@ -28,37 +28,31 @@ Port 143/993
 
 <img src="https://wiki.matbao.net/wp-content/uploads/2019/08/mail-server-la-gi-co-3-giao-thuc-hoat-dong-chinh-cua-mail-server.png">
 
-**Bước 1**:
-Sau khi tạo và gửi email, email của bạn sẽ kết nối với Server SMTP mang tên miền của mình. SMTP sẽ đặt tên cho tất cả mọi thứ, ví dụ: smtp.tenmien.com.
+<img src="https://longvan.net/hinhanh/tintuc/cac-thuat-ngu-ve-mail-server.jpg">
 
-**Bước 2**:
-Email của bạn sẽ "giao tiếp" với SMTP server. Và cung cấp cho SMTP Server mọi thông tin như: địa chỉ mail người gửi, địa chỉ mail người nhận, nội dung email và file đính kèm.
+**Bước 1: Kết nối với SMTP server**
+Khi bạn gửi email, nền tảng hoặc dịch vụ email, chẳng hạn như G Suite, Exchange, Office 365 và Zimbra, sẽ kết nối với SMTP server. SMTP server đó được kết nối với domain của bạn và có địa chỉ cụ thể, chẳng hạn như smtp.gatefy.com hoặc smtp.example.com.
 
-**Bước 3**:
-Tại đây có 2 trường hợp xảy ra:
+Ở giai đoạn này, dịch vụ email sẽ cung cấp cho SMTP server một số thông tin quan trọng, chẳng hạn như địa chỉ email của bạn, nội dung thư và địa chỉ email của người nhận.
 
-Trường hợp 1: Tên miền (domain email) của người gửi và người nhận giống nhau. 
+**Bước 2: Xử lý domain của người nhận**
+Bây giờ, SMTP server sẽ xác định và xử lý địa chỉ email của người nhận. Nếu bạn đang gửi email cho người khác trong công ty của mình, tức là đến cùng một domain, mail sẽ được chuyển hướng đến IMAP hoặc POP3 server.
 
-tenemail_1@tenmienA.com tới tenemail_2@tenmienA.com. Mail này sẽ được gửi trực tiếp đến POP3 hoặc IMAP Server có tên miền của bạn. 
+Nếu bạn đang gửi mail cho một công ty khác, SMTP server sẽ cần giao tiếp với email server của công ty đó.
 
-Trường hợp 2: Tên miền của người gửi và người nhận khác
+**Bước 3: Xác định IP của người nhận**
+Ở giai đoạn này, SMTP server của bạn sẽ cần kết nối với DNS (Domain Name System) để tìm máy chủ của người nhận.
 
-tenemail_1@tenmienA.com tới tenemail_2@tenmienB.com. SMTP Server sẽ phải "liên lạc" với một server tên miền khác.
+DNS hoạt động giống như một hệ thống dịch thuật. Về cơ bản, nó sẽ giúp chuyển domain của người nhận thành địa chỉ IP.
 
-**Bước 4**:
-Để tìm ra Server của người nhận, SMTP Server của người gửi sẽ phải giao tiếp với DNS (Domain Name Server). 
+SMTP cần IP để thực hiện chức năng của nó một cách chính xác, do đó có thể chuyển thư trực tiếp đến máy chủ của người nhận.
 
-DNS sẽ lấy thông tin tên miền người nhận và dịch trang địa chỉ IP. 
+**Bước 4: Chuyển email**
+Tuy nhiên, không phải mọi thứ đều đơn giản như vẻ bề ngoài. Nói chung, email của bạn sẽ đi qua các SMTP server không liên quan khác nhau cho đến khi nó đến SMTP server của người nhận.
 
-SMTP Server người gửi không thể thực hiện gửi email chính xác mà chỉ dựa trên tên miền thêm vào đó sẽ là địa chỉ IP. Địa chỉ IP (đơn nhất) sẽ giúp SMTP hoạt động chính xác và hiệu quả hơn.
+Khi nhận được email, SMTP server của người nhận sẽ kiểm tra thư và sau đó chuyển nó đến MAP hoặc POP3 server. Sau đó, email đi vào hàng đợi, được xử lý cho đến khi người nhận có thể truy cập. Sau đó, người nhận có thể đọc email.
 
-**Bước 5**:
-Sau khi có địa chỉ IP của người nhận, tức STMP người gửi đã có thể kết nối STMP Server người nhận.
-
-**Bước 6**:
-SMTP server người nhận sẽ quét (scan) thư gửi đến. Nếu nhận ra tên miền và tên người gửi, nó sẽ chuyển tiếp (forward) mail thuộc POP3 hoặc IMAP server mang tên miền của bạn. 
-
-Từ đây, email đã được gửi đến mục hộp thư đến của người nhận.
+Bây giờ, bạn đã biết những điều cơ bản về mail server đến và đi. Tuy nhiên, còn một thứ rất quan trọng cần đề cập. Đó là bảo mật email.
 
 ## 4. Giải pháp
 
