@@ -16,7 +16,7 @@ Outgoing Mail Server hay Mail Server gửi đi sử dụng giao thức SMTP (Sim
 Port 25/465
 
 - Incoming Email Server là gì? 
-Giao thức này hay còn được biết đến dưới 2 hình thức:
+Giao thức này hay còn được biết đến dưới 2 hình thức: 
 
 POP3 (Post Office Protocol): chuyển email tới lưu ở máy tính chứa Mail Client, thường là nội bộ máy tính của người dùng thông qua một ứng dụng email như Outlook, Mac Mail, Windows Mail… 
 Port 110/995
